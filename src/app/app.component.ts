@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from './theme.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  buttonLabel: string = 'Dark Mode';
+  constructor(private themeService: ThemeService) {}
+
+  getButtonLabel(): string {
+    if (this.themeService.theme === 'light-theme') {
+      return 'Light Mode';
+    }
+    return 'Dark Mode';
+  }
+  switchTheme(): void {
+    this.themeService.switchTheme();
+  }
 }

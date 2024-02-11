@@ -1,0 +1,16 @@
+.button-container {
+  padding: 1rem 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    padding: 1rem;
+    border: none;
+    background-color: lightcoral;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+}
