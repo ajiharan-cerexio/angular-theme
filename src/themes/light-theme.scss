@@ -1,0 +1,41 @@
+// Light Theme
+
+$background-color: white;
+$primary-color: rgb(248, 245, 245);
+$border-color: black;
+$font-color: black;
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: $background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  .card {
+    width: 50vw;
+    height: 50vh;
+    background-color: $primary-color;
+    border: 1px solid $border-color;
+
+    .header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      color: $font-color;
+    }
+  }
+}
